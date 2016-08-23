@@ -115,3 +115,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+
+# custom
+beagleboneblack="root@192.168.7.2"
+giturl="https://github.com/michaelstecklein"
