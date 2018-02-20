@@ -127,3 +127,6 @@ beagleboneblack="root@192.168.7.2"
 inetbeagleboneblack="root@192.168.0.5"
 raspberrypi="pi@192.168.0.181"
 giturl="https://github.com/michaelstecklein"
+
+#so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon
