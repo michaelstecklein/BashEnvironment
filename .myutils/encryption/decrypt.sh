@@ -16,4 +16,10 @@ fi
 
 openssl aes-256-cbc -d -a -in $FILE -out $FILEROOT
 
+if [ $? != 0 ]; then
+	echo "ERROR: Error decrypting $FILE, probably incorrect password."
+	rm $FILEROOT
+	exit 1
+fi
+
 echo "Sucessfully decrypted"
